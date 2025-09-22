@@ -1,0 +1,162 @@
+@use 'index' as *;
+
+.blog{
+    width: 90%;
+    margin: 8rem auto 10rem;
+    .blog-title{
+        margin-bottom: 4rem;
+        h1{
+            font-size: 6rem;
+            line-height: 6rem;
+            letter-spacing: 2%;
+            font-weight: 400;
+            margin-bottom: 4rem;
+        }
+        .updates-links{
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+    }
+    .blog-wrap{
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1440px;
+        .blog-item{
+            padding-bottom: 2rem;
+            border-bottom: 1px solid $brown-500;
+            a{
+                display: grid;
+                gap: 1.5rem;
+                grid-template-rows: 25rem 8rem 8rem;
+                width: 100%;
+                img{
+                    width: 35rem;
+                    height: 25rem;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .date{
+                        font-size: 1.6rem;
+                        line-height: 2rem;
+                        letter-spacing: 0%;
+                        font-weight: 400;
+                    }
+                    h4{
+                        font-size: 1.6rem;
+                        letter-spacing: 0%;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: $orange-800;
+                    }
+                    h3{
+                        font-size: 2.5rem;
+                        line-height: 3rem;
+                        letter-spacing: 0%;
+                    }
+                }
+                .description{
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    letter-spacing: 2%;
+                    font-weight: 400;
+                    color: $gray-900;
+                    width: 35rem;
+                    grid-row: 3;
+                }
+                .greenButton{
+                    grid-row: 4;
+                    padding: 1.5rem 4.6rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 90%;
+        margin: 5.7rem auto 6rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        .blog-title{
+            text-align: center;
+            h1{
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            h2{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                margin: 1.5rem 0 0;
+            }
+            .updates-links{
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                a{
+                    width: 45%;
+                }
+            }
+        }
+        .blog-wrap{
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            width: 100%;
+            .blog-item{
+                padding-bottom: 2rem;
+                width: 100%;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.6rem;
+                    width: 100%;
+                    img{
+                        aspect-ratio: 45/30;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                    .info{
+                        width: 100%;
+                        gap: 1rem;
+                    }
+                    .title{
+                        .date{
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                            margin-bottom: 0rem;
+                        }
+                        h3{
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                        }
+                        h4{
+                            font-size: 1.8rem;
+                            line-height: 2rem;
+                            width: 100%;
+                            margin-bottom: 0rem;
+                        }
+                        .description{
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                            width: 100%;
+                            margin-bottom: 2rem;
+                        }
+                        .brownButton{
+                            padding: 1.2rem 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

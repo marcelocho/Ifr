@@ -1,0 +1,47 @@
+---
+title: IFR - International Friendship Room
+layout: "base.njk"
+cssPath: "/css/updates.css"
+---
+{% include 'nav.njk' %}
+
+<header class="header">
+    <img class="tablet-desktop" src="../img/updates/header.webp" alt="">
+    <img class="only-mobile" src="../img/updates/header-mob.webp" alt="">
+</header>  
+
+
+
+<section class="blog">
+  <div class="blog-title">
+    <h1>Our latest updates</h1>
+    <div class="updates-links">
+      <a href="/outbound" class="brownButton">Outbound Exchange</a>
+      <a href="/inbound" class="brownButton">Inbound Exchange</a>
+      <a href="/lunch" class="brownButton">Happy Lunch Hour</a>
+      <a href="/seminar" class="brownButton">Global Seminar</a>
+      <a href="/friendship" class="brownButton">Friendship Moments</a>
+      <a href="/cultural" class="brownButton">Cultural Exchange</a>
+    </div>
+  </div>
+  <div class="blog-wrap">
+  {% for item in collections.updates | limit(12) %}
+    <div class="blog-item">
+      <a href="{{ item.url }}">
+        <img src="{{ item.data.image }}" alt="">
+        <div class="title">
+          <p class="date">{{ item.data.start | eventDateJa(item.data.end) }}</p>
+          <h4>{{ item.data.tags | filteredTags }}</h4>
+          <h3>{{ item.data.title }}</h3>
+        </div>
+        <p class="description">{{ item.data.description }}</p>
+        <p class="greenButton">Read more</p>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+
+
+{% include 'footer.njk' %}

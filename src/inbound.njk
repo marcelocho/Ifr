@@ -1,0 +1,44 @@
+---
+title: IFR - International Friendship Room
+layout: "base.njk"
+cssPath: "/css/blog.css"
+---
+{% include 'nav.njk' %}
+
+<header class="header">
+    <img class="tablet-desktop" src="../img/blog/inbound.webp" alt="Foto de uma menina fazendo exercício na fisioterapia">
+    <img class="only-mobile" src="../img/blog/inbound-mob.webp" alt="Foto de uma menina fazendo exercício na fisioterapia">
+</header>  
+
+{% set geralData = collections.geral[0].data %}
+
+
+<section class="blog">
+  <div class="blog-title">
+    <h1>Inbound Student Exchange Program</h1>
+    <h2>{{ geralData.inbound }}</h2>
+    <a href="/updates" class="brownButton">Explore our latest updates</a>
+  </div>
+  <div class="blog-wrap">
+  {% for item in collections.latestInbound | limit(8) %}
+    <div class="blog-item">
+      <a href="{{ item.url }}">
+        <img src="{{ item.data.image }}" alt="">
+        <div class="info">
+          <div class="title">
+            <p class="date">{{ item.data.start | eventDateJa(item.data.end) }}</p>
+            <h3>{{ item.data.title }}</h3>
+            <h4>{{ item.data.subtitle }}</h4>
+          </div>
+          <p class="description">{{ item.data.description }}</p>
+          <p class="greenButton">Read more</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+
+
+{% include 'footer.njk' %}

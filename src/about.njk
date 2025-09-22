@@ -1,0 +1,111 @@
+---
+title: IFR - International Friendship Room
+layout: "base.njk"
+cssPath: "/css/about.css"
+---
+ {% include "nav.njk" %}
+
+ <header class="header">
+    <img src="../img/about/header.webp" alt="picture of people in IFR" class="tablet-desktop">
+    <img src="../img/about/header-mob.webp" alt="picture of people in IFR" class="only-mobile">
+ </header>
+
+ <section class="about">
+   <div class="title-about">
+      <h1>About IFR</h1>
+   </div>
+   <div class="wrap-about">
+      <div class="text-about">
+         <p>
+            In October 2020, the Faculty of Dentistry established a new department called the Department of International Oral Health Science Education. It houses the International Friendship Room (IFR) and the Multi-purpose Room. 
+            <br/><br/>
+            Activities include international collaboration, cultural exchange, study-abroad programs, and English immersion through free discussions like clinical reasoning in English, oral/poster presentation skills, manuscript advisement, among others.
+         </p>
+         <p class="jp">
+            ２０２０年１０月、歯学部に「国際口腔健康科学教育分野」が新設されました。この分野には、国際友好室（IFR）と多目的室が設置されています。
+            <br/><br/>
+            活動内容には、国際連携や文化交流、留学プログラムの推進、さらに英語での臨床的推論、口頭・ポスター発表スキル、論文指導など、自由討論を通じた英語イマージョン教育が含まれています。
+         </p>
+      </div>
+      <video src="../img/about/IFR-video.mp4" controls></video>
+   </div>
+ </section>
+
+ <div class="pictures">
+   <h2>Check out our activities</h2>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+         <a class="swiper-slide" href="/seminar">
+            <img src="../img/about/ifr2.webp" alt="image of IFR" class="slide-img">
+            <p>Global Lunch Seminar</p>
+         </a>
+         <a class="swiper-slide" href="/lunch">
+            <img src="../img/about/ifr3.webp" alt="image of IFR" class="slide-img">
+            <p>Happy Lunch Hour</p>
+         </a>
+         <a class="swiper-slide" href="/cultural">
+            <img src="../img/about/ifr6.webp" alt="image of IFR" class="slide-img">
+            <p>Cultural Exchange</p>
+         </a>
+         <a class="swiper-slide" href="/outbound">
+            <img src="../img/about/ifr7.webp" alt="image of IFR" class="slide-img">
+            <p>Outbound Exchange Program</p>
+         </a>
+         <a class="swiper-slide" href="/inbound">
+            <img src="../img/about/ifr8.webp" alt="image of IFR" class="slide-img">
+            <p>Inbound Exchange Program</p>
+         </a>
+         <a class="swiper-slide" href="/friendship"">
+            <img src="../img/about/ifr5.webp" alt="image of IFR" class="slide-img">
+            <p>Friendship moments</p>
+         </a>
+      </div>
+   </section>
+   <img 
+      class="swiper-button-prev"
+      src="../img/icons/previous.webp"
+      srcset="../img/icons/previous@2x.webp 2x"
+      alt="Back icon"
+   >
+   <img 
+      class="swiper-button-next"
+      src="../img/icons/forward.webp" 
+      srcset="../img/icons/forward@2x.webp 2x" 
+      alt="Next icon">
+
+ </div>
+
+ <!-- <div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg" />
+</div> -->
+
+ <a href="/updates" class="greenButton">Discover More</a>
+
+
+ {% include "footer.njk" %}
+
+ <script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            360: {
+                spaceBetween: 8,
+            },
+            700: {
+                spaceBetween: 40,
+            },
+            1024: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
+

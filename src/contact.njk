@@ -1,0 +1,44 @@
+---
+title: IFR - International Friendship Room
+layout: "base.njk"
+cssPath: "/css/contact.css"
+---
+ {% include "nav.njk" %}
+
+ <header class="header">
+    <img class="tablet-desktop" src="../img/contact/header.webp" alt="Image of Graduate School of Oral Sciences building">
+    <img class="only-mobile" src="../img/contact/header-mob.webp" alt="Image of Graduate School of Oral Sciences building">
+ </header>
+
+{% set geralData = collections.geral[0].data %}
+
+ <div class="wrap-contact">
+   <div class="left-invitation">
+      <h1>Find us here</h1>
+      <p>{{ geralData.contactEnglish }}</p>
+      <p class="jp"> {{ geralData.contactJapanese }} </p>
+      <div class="omar-info">
+         <h3>Omar Marianito Maningo Rodis, DMD, PhD</h3>
+         <p>
+             Professor (Education)
+             <br/>
+             Department of International Oral Health Science Education
+             <br/>
+             Tokushima University Graduate School of Biomedical Sciences
+             <br/>
+             3-18-15 Kuramoto-cho, Tokushima City, Japan 770-8504
+             <br/>
+             <a href="tel:+81886339365">
+                Tel: +81 88 633-9100 Direct Line: +81 88 633-9365 Local: 5529
+             </a>
+             <br/>
+             <a href="mailto:omarodis@tokushima-u.ac.jp">
+                 E-mail: omarodis@tokushima-u.ac.jp
+             </a>
+         </p>
+      </div>
+   </div>
+   <img src="../img/contact/ifr.webp" alt="Image of IFR door">
+ </div>
+
+ {% include "footer.njk" %}

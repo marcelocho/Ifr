@@ -1,0 +1,78 @@
+---
+title: IFR - Internation Friendship Room
+layout: "base.njk"
+cssPath: "/css/pages.css"
+---
+
+{% include 'nav.njk' %}
+
+<header class="header">
+  <img class="tablet-desktop" src="{{ image }}" alt="" />
+  <img class="only-mobile" src="{{ image }}" alt="" />
+</header>
+
+<section class="pages">
+  <a href="/updates" class="back">
+    <img
+      src="../../img/icons/back.webp"
+      srcset="../../img/icons/back@2x.webp 2x"
+      alt="flecha para voltar"
+    />
+    <h2>Explore our latest updates</h2>
+  </a>
+  <div class="wrap-info">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    {%if link %}
+    <a target="_blank" href="{{ link }}">
+      <img
+        src="../../img/icons/drive.webp"
+        srcset="../../img/icons/drive@2x.webp 2x"
+        alt="Google Drive icon"
+      />
+      <p>Check out our Google Drive for more</p>
+    </a>
+    {% endif %}
+    <div class="wrap-fotos">
+      <img src="{{ image }}" alt="" class="slide-img" />
+      {% for pictures in gallery %}
+      <img src="{{ pictures | url }}" alt="" class="slide-img" />
+      {% endfor %}
+      <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'footer.njk' %}
+
+<script>
+  // Seleciona o modal
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  // Pega todas as imagens do swiper
+  const imgs = document.querySelectorAll(".slide-img");
+
+  imgs.forEach((img) => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Fechar modal
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  // Fechar clicando fora da imagem
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>

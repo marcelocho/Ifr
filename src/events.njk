@@ -1,0 +1,40 @@
+---
+title: IFR - International Friendship Room
+layout: "base.njk"
+cssPath: "/css/events.css"
+---
+ {% include "nav.njk" %}
+
+ <header class="header">
+    <img src="../img/events/header.webp" alt="" class="">
+ </header>
+
+<section class="events">
+  <div class="events-title">
+    <h1>Upcoming Events</h1>
+    <h2>Stay tuned for more opportunities to connect and share</h2>
+  </div>
+  <div class="events-wrap">
+  {% for item in collections.futureEvents | limit(8) %}
+      <div class="events-item">
+        <img src="{{ item.data.image }}" alt="">
+        <div class="item-info">
+          <div class="item-title">
+            <p class="date">{{ item.data.start | eventDateJa(item.data.end) }}</p>
+            <h3>{{ item.data.title }}</h3>
+            <h4>{{ item.data.subtitle }}</h4>
+          </div>
+          <p class="description">{{ item.data.description }}</p>
+          <p class="invite">
+            We hope to see you at IFR!<br/>
+            Tokushima University Faculty of Dentistry<br/>
+            Graduate School of Oral Sciences 1st Floor
+          </p>
+        </div>
+      </div>
+  {% endfor %}
+  </div>
+</section>
+
+
+ {% include "footer.njk" %}

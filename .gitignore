@@ -1,0 +1,6 @@
+webp.js
+yarn*
+/node_modules
+/public
+src/css/build
+.vscode

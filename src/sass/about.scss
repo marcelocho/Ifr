@@ -1,0 +1,185 @@
+@use 'index' as *;
+
+.about{
+    padding: 7rem 0;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1{
+        text-transform: uppercase;
+        color: $orange-800;
+    }
+    .wrap-about{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        .text-about{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 1;
+            p{
+                font-size: 1.8rem;
+                color: $brown-900;
+            }
+        }
+        video{
+            aspect-ratio: 9/16;
+            height: 40rem;
+            flex: 1;
+        }
+
+    }
+    @media screen and (max-width:700px) {
+        padding: 4rem 0;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h1{
+            text-align: center;
+        }
+        .wrap-about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .text-about{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                flex: 1;
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            video{
+                aspect-ratio: 9/16;
+                width: 80%;
+                height: auto;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.pictures{
+    position: relative;
+    h2{
+        margin: 4rem 7% 3rem;
+        text-transform: uppercase;
+
+    }
+    .swiper{
+        width: 85%;
+        margin: auto;
+        .swiper-wrapper{
+            .swiper-slide{
+                position: relative;
+                aspect-ratio: 4/3;
+                max-width: 40rem !important;
+                height: auto;
+                border-radius: 20px;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                p{
+                    position: absolute;
+                    bottom: 2rem;
+                    z-index: 20;
+                    color: $background;
+                    background-color: #5c4b3b99;
+                    padding: 1rem;
+                    width: 100%;
+                    text-align: center;                    
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .swiper-button-prev{
+        left: 4rem;
+        right: unset;
+        width: 3.2rem;
+        height: 4.5rem;
+        top: 60%;
+    }
+    .swiper-button-next{
+        right: 4rem;
+        left: unset;
+        width: 3.2rem;
+        height: 4.5rem;
+        top: 60%;
+    }
+    @media screen and (max-width:700px) {
+        h2{
+            margin: 3rem 7% 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+        .swiper{
+            width: 85%;
+            margin: auto;
+            .swiper-wrapper{
+                .swiper-slide{
+                    position: relative;
+                    aspect-ratio: 4/3;
+                    max-width: 40rem !important;
+                    height: auto;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+                    p{
+                        position: absolute;
+                        bottom: 2rem;
+                        z-index: 20;
+                        color: $background;
+                        background-color: #5c4b3b99;
+                        padding: 1rem;
+                        width: 100%;
+                        text-align: center;                    
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .swiper-button-prev{
+            left: 0.5rem;
+            right: unset;
+            width: 2rem;
+            height: 3rem;
+            top: 65%;
+        }
+        .swiper-button-next{
+            right: 0.5rem;
+            left: unset;
+            width: 2rem;
+            height: 3rem;
+            top: 65%;
+        }
+    }
+}
+
+.greenButton{
+    margin: 8rem auto;
+    @media screen and (max-width:700px) {
+        margin: 3rem auto 5rem;
+    }
+}

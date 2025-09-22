@@ -1,0 +1,184 @@
+backend:
+  name: git-gateway
+  branch: main
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: "ds2vdyndv"
+    api_key: "652719263293536"
+collections:
+  - name: "seminar"
+    label: "Lunch Seminar"
+    folder: "src/seminar"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["seminar"]
+
+  - name: "HLH"
+    label: "HLH"
+    folder: "src/hlh"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["hlh"]
+
+  - name: "cultural"
+    label: "Cultural Exchange"
+    folder: "src/cultural"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["cultural"]
+  
+  - name: "friendship"
+    label: "Friendship Moments"
+    folder: "src/friendship"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["friendship"]
+  
+  - name: "inbound"
+    label: "Inbound Exchange"
+    folder: "src/inbound"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["inbound"]
+
+  - name: "outbound"
+    label: "Outbound Exchange"
+    folder: "src/outbound"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Drive Link", name: "link", widget: "string", required: false }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["outbound"]
+  
+  - name: "events"
+    label: "Next Events"
+    folder: "src/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Start at", name: "start", widget: "datetime", required: false }
+      - { label: "Finish at", name: "end", widget: "datetime", required: false }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["events"]
+
+  - name: "config"
+    label: "Site texts configurations"
+    files:
+      - file: "src/config/description.md"
+        label: "Description texts"
+        name: "description"
+        fields:
+          - { label: "Global Lunch Seminar", name: "seminar", widget: "string" }
+          - { label: "Happy Lunch", name: "hlh", widget: "string" }
+          - { label: "Outbound", name: "outbound", widget: "string" }
+          - { label: "Inbound", name: "inbound", widget: "string" }
+          - { label: "Cultural exchange", name: "cultural", widget: "string" }
+          - { label: "Friendship Moments", name: "friendship", widget: "string" }
+          - { label: "Contact English", name: "contactEnglish", widget: "string" }
+          - { label: "Contact Japanese", name: "contactJapanese", widget: "string" }

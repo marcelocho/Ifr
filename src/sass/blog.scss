@@ -1,0 +1,165 @@
+@use 'index' as *;
+
+.blog{
+    width: 90%;
+    margin: 11rem auto 13rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-start;
+    .blog-title{
+        h1{
+            font-size: 4.5rem;
+            line-height: 5rem;
+            letter-spacing: 5%;
+        }
+        h2{
+            font-size: 2.2rem;
+            line-height: 3rem;
+            letter-spacing: 0%;
+            font-weight: 400;
+            margin-top: 2.2rem;
+            color: $gray-900;
+        }
+        .brownButton{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+    }
+    .blog-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .blog-item{
+            padding-bottom: 4rem;
+            border-bottom: 1px solid $brown-500;
+            a{
+                display: flex;
+                gap: 2rem;
+                img{
+                    aspect-ratio: 42/35;
+                    width: 35rem;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 45rem;
+                }
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    .date{
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
+                        letter-spacing: 0%;
+                        font-weight: 600;
+                    }
+                    h3{
+                        font-size: 3.2rem;
+                        line-height: 3.2rem;
+                    }
+                    h4{
+                        font-size: 2rem;
+                        line-height: 2.2rem;
+                    }
+                }
+                .description{
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    letter-spacing: 2%;
+                    color: $gray-900;
+                }
+                .greenButton{
+                    padding: 1rem 2rem;
+                    font-size: 1.3rem;
+                }
+            }
+
+        }
+        .blog-item:last-of-type{
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 90%;
+        margin: 5rem auto 6rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        .blog-title{
+            text-align: center;
+            h1{
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+            h2{
+                font-size: 1.4rem;
+                line-height: 2rem;
+                margin: 1.5rem 0 0;
+            }
+             .brownButton{
+                margin: 2rem auto 2rem;
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+        .blog-wrap{
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            width: 100%;
+            .blog-item{
+                width: 100%;
+                padding-bottom: 2rem;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    width: 100%;
+                    img{
+                        aspect-ratio: 45/30;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                    .info{
+                        width: 100%;
+                        gap: 1rem;
+                    }
+                    .title{
+                        .date{
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                        }
+                        h3{
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                        }
+                        h4{
+                            font-size: 1.8rem;
+                            line-height: 2rem;
+                            width: 100%;
+                        }
+                        .description{
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                            width: 100%;
+                        }
+                        .brownButton{
+                            padding: 1.2rem 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@use 'index' as *;
+
+.error{
+    padding-top: 25vh;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    a{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        img{
+            width: 3rem;
+        }
+    }
+}
