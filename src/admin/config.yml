@@ -4,8 +4,8 @@ backend:
 media_library:
   name: cloudinary
   config:
-    cloud_name: "ds2vdyndv"
-    api_key: "652719263293536"
+    cloud_name: "dhliib9wx"
+    api_key: "587542652824211"
 collections:
   - name: "seminar"
     label: "Lunch Seminar"
