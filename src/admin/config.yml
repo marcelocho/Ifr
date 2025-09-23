@@ -94,6 +94,7 @@ collections:
         widget: "list"
         required: false
         field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Video", name: "video", widget: "link" }
       - label: "Tags"
         name: "tags"
         widget: "list"
