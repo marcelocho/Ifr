@@ -1,7 +1,7 @@
 @use "./colors" as *;
 
 footer{
-    background-color: $background2;
+    background-color: $brown-800;
     padding: 5rem 0;
     .top-footer{
         img{
@@ -17,13 +17,16 @@ footer{
         h3{
             font-size: 2rem;
             line-height: 2rem;
+            color: $background;
         }
         h4{
             font-size: 1.8rem;
             line-height: 1.8rem;
+            color: $background;
         }
         p{
             font-size: 1.6rem;
+            color: $background;
         }
         .left-footer, .mid-footer, .right-footer{
             flex: 1;
@@ -38,6 +41,7 @@ footer{
             gap: 2rem;
             a{
                 font-size: 1.6rem;
+                color: $background;
             }
         }
         .insta-footer{
