@@ -94,7 +94,11 @@ collections:
         widget: "list"
         required: false
         field: { label: "Image", name: "image", widget: "image" }
-        field: { label: "Video", name: "video", widget: "link" }
+      - label: "Video Gallery"
+        name: "video"
+        widget: "list"
+        required: false
+        field: { label: "Video", name: "video", widget: "image" }
       - label: "Tags"
         name: "tags"
         widget: "list"

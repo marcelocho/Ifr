@@ -38,6 +38,9 @@ cssPath: "/css/pages.css"
       {% for pictures in gallery %}
       <img src="{{ pictures | url }}" alt="" class="slide-img" />
       {% endfor %}
+      {% for video in video %}
+      <video controls src="{{ video | url }}" alt="" class="slide-img" />
+      {% endfor %}
       <div id="imgModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg" />
