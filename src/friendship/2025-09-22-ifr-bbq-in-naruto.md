@@ -9,7 +9,7 @@ gallery:
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758503041/20250921_141635_fsxgip.jpg
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758503039/20250921_141606_nax4ps.jpg
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758503037/20250921_141509_vrnkal.jpg
-  - https://res.cloudinary.com/dhliib9wx/video/upload/v1758639011/IMG_3288_at9t5e.mov
+  - https://player.cloudinary.com/embed/?cloud_name=dhliib9wx&public_id=IMG_3288_at9t5e&profile=cld-default
 tags:
   - friendship
 ---
