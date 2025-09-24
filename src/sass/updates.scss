@@ -27,10 +27,11 @@
         .blog-item{
             padding-bottom: 2rem;
             border-bottom: 1px solid $brown-500;
+            width: 35rem;
             a{
                 display: grid;
                 gap: 1.5rem;
-                grid-template-rows: 25rem 8rem 8rem;
+                grid-template-rows: 25rem 8.4rem 9rem;
                 width: 100%;
                 img{
                     width: 35rem;
@@ -43,21 +44,22 @@
                     flex-direction: column;
                     align-items: flex-start;
                     .date{
-                        font-size: 1.6rem;
+                        font-size: 1.4rem;
                         line-height: 2rem;
                         letter-spacing: 0%;
                         font-weight: 400;
                     }
                     h4{
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                         letter-spacing: 0%;
+                        line-height: 2rem;
                         font-weight: 400;
                         text-transform: uppercase;
                         color: $orange-800;
                     }
                     h3{
-                        font-size: 2.5rem;
-                        line-height: 3rem;
+                        font-size: 2.2rem;
+                        line-height: 2.6rem;
                         letter-spacing: 0%;
                     }
                 }
@@ -130,17 +132,18 @@
                         gap: 1rem;
                     }
                     .title{
+                        gap: 0.3rem;
                         .date{
                             font-size: 1.5rem;
                             line-height: 2rem;
                             margin-bottom: 0rem;
                         }
                         h3{
-                            font-size: 2.5rem;
+                            font-size: 2rem;
                             line-height: 2.5rem;
                         }
                         h4{
-                            font-size: 1.8rem;
+                            font-size: 1.6rem;
                             line-height: 2rem;
                             width: 100%;
                             margin-bottom: 0rem;
