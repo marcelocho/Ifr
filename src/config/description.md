@@ -26,7 +26,7 @@ cultural: Cultural Exchange events give students the chance to share and
   about everyday life in different countries. These events create a welcoming
   space to celebrate diversity and deepen mutual understanding.
 friendship: Beyond formal events and programs, the International Friendship Room
-  is also a place where genuine connections are made. Friendship Moments
+  is also a place where genuine connections are made. Special Moments
   highlight the casual side of student life—sharing meals, laughing together,
   and building friendships that often extend beyond campus. These are the
   memories that capture the true spirit of the IFR.

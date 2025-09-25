@@ -8,7 +8,7 @@ media_library:
     api_key: "652719263293536"
 collections:
   - name: "seminar"
-    label: "Lunch Seminar"
+    label: "Global Lunch Seminar"
     folder: "src/seminar"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -77,7 +77,7 @@ collections:
         default: ["cultural"]
   
   - name: "friendship"
-    label: "Friendship Moments"
+    label: "Special Moments"
     folder: "src/friendship"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -179,6 +179,6 @@ collections:
           - { label: "Outbound", name: "outbound", widget: "string" }
           - { label: "Inbound", name: "inbound", widget: "string" }
           - { label: "Cultural exchange", name: "cultural", widget: "string" }
-          - { label: "Friendship Moments", name: "friendship", widget: "string" }
+          - { label: "Special Moments", name: "friendship", widget: "string" }
           - { label: "Contact English", name: "contactEnglish", widget: "string" }
           - { label: "Contact Japanese", name: "contactJapanese", widget: "string" }
