@@ -16,11 +16,11 @@ cssPath: "/css/blog.css"
 <section class="blog">
   <div class="blog-title">
     <h1>Special Moments</h1>
-    <h2>{{ geralData.friendship }}</h2>
+    <h2>{{ geralData.special }}</h2>
     <a href="/updates" class="brownButton">Explore our latest updates</a>
   </div>
   <div class="blog-wrap">
-  {% for item in collections.latestFriendship | limit(8) %}
+  {% for item in collections.latestSpecial | limit(8) %}
    <div class="blog-item">
       <a href="{{ item.url }}">
         <img src="{{ item.data.image }}" alt="">
