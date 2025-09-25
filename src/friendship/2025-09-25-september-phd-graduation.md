@@ -15,5 +15,5 @@ gallery:
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768801/IMG_6948_zcrez4.jpg
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768797/IMG_6940_y21zts.jpg
 tags:
-  - friendship
+  - special
 ---

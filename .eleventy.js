@@ -61,7 +61,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("latestInbound", api => latestByFolder(api, "inbound"));
   eleventyConfig.addCollection("latestOutbound", api => latestByFolder(api, "outbound"));
   eleventyConfig.addCollection("latestHLH", api => latestByFolder(api, "hlh"));
-  eleventyConfig.addCollection("latestFriendship", api => latestByFolder(api, "friendship"));
+  eleventyConfig.addCollection("latestSpecial", api => latestByFolder(api, "special"));
 
 
   //funcao para selecionar todas as ultimas postagens e mostrar na sessao updates por ordem de data
@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
       .filter(item =>
         item.inputPath.startsWith("./src/seminar/") ||
         item.inputPath.startsWith("./src/hlh/") ||
-        item.inputPath.startsWith("./src/friendship/") ||
+        item.inputPath.startsWith("./src/special/") ||
         item.inputPath.startsWith("./src/outbound/") ||
         item.inputPath.startsWith("./src/inbound/") ||
         item.inputPath.startsWith("./src/cultural/")

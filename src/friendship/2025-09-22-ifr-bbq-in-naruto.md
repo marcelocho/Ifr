@@ -11,5 +11,5 @@ gallery:
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758503037/20250921_141509_vrnkal.jpg
 video: []
 tags:
-  - friendship
+  - special
 ---
