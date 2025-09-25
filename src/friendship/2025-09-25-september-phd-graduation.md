@@ -10,6 +10,10 @@ gallery:
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768776/IMG_6904_vlxlog.jpg
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768778/IMG_6910_t76nel.jpg
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768783/IMG_6917_gmqwzc.jpg
+  - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768794/IMG_6935_ymo1jc.jpg
+  - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768797/IMG_6941_unzvyn.jpg
+  - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768801/IMG_6948_zcrez4.jpg
+  - https://res.cloudinary.com/ds2vdyndv/image/upload/v1758768797/IMG_6940_y21zts.jpg
 tags:
   - friendship
 ---
