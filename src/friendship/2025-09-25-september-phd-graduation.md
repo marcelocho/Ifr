@@ -1,5 +1,5 @@
 ---
-title: September PhD Graduation
+title: "September 2025 PhD Graduation "
 description: Graduation ceremony of Dr. Jaime Fabillar, Dr. Rieski Prihastuti,
   Dr. Raras Enggardipta, and Dr. Niluh Woroprobosari
 link: https://drive.google.com/drive/folders/1xxkaRq_CVqG1r8eEBzRSp0OZjEaPDkUq?usp=drive_link
