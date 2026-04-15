@@ -16,7 +16,10 @@ cssPath: "/css/events.css"
   </div>
   <div class="events-wrap">
   {% for item in collections.futureEvents | limit(8) %}
-      <div class="events-item">
+      <div class="events-item"
+        data-start="{{ item.data.start.toISOString() }}"
+        {% if item.data.end %}data-end="{{ item.data.end.toISOString() }}"{% endif %}
+      >
         <img src="{{ item.data.image }}" alt="">
         <div class="item-info">
           <div class="item-title">
@@ -34,7 +37,45 @@ cssPath: "/css/events.css"
       </div>
   {% endfor %}
   </div>
+  <div class="no-events" style="display:none;">
+    <p>No upcoming events at the moment.<br/>Stay tuned for more opportunities to connect and share!</p>
+  </div>
 </section>
 
+<script>
+  (function () {
+    function filterPastEvents() {
+      // Calcula o horário atual no fuso do Japão (Asia/Tokyo = UTC+9)
+      var now = new Date();
+      var items = document.querySelectorAll('.events-item');
+      var visibleCount = 0;
+
+      items.forEach(function (item) {
+        var endStr = item.getAttribute('data-end');
+        var startStr = item.getAttribute('data-start');
+        // Usa end se existir, senão usa start
+        var referenceDate = new Date(endStr || startStr);
+
+        if (referenceDate < now) {
+          item.style.display = 'none';
+        } else {
+          visibleCount++;
+        }
+      });
+
+      // Se não sobrou nenhum evento futuro, mostra a mensagem
+      var noEventsMsg = document.querySelector('.no-events');
+      if (noEventsMsg && visibleCount === 0) {
+        noEventsMsg.style.display = 'block';
+      }
+    }
+
+    // Filtra quando a página carrega
+    filterPastEvents();
+
+    // Re-verifica a cada 60 segundos para esconder eventos que acabaram de passar
+    setInterval(filterPastEvents, 60000);
+  })();
+</script>
 
  {% include "footer.njk" %}
