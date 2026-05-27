@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const md = markdownIt({ html: false, breaks: true, linkify: true });
 
  function latestByFolder(collectionApi, folder) {
     return collectionApi.getAll()
@@ -12,6 +14,8 @@ const { DateTime } = require("luxon");
   }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter("markdown", (content) => md.render(content ?? ""));
+
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/admin");

@@ -33,7 +33,9 @@ cssPath: "/css/events.css"
             <h3>{{ item.data.title }}</h3>
             <h4>{{ item.data.subtitle }}</h4>
           </div>
-          <p class="description">{{ item.data.description }}</p>
+          <div class="description">
+            {{ item.data.description | markdown | safe }}
+          </div>
           <p class="invite">
             We hope to see you at IFR!<br/>
             Tokushima University Faculty of Dentistry<br/>
