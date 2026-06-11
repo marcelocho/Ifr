@@ -2,6 +2,7 @@
 title: iFR 13th Year Anniversary
 description: IFR celebrated its 13th anniversary on June 5, 2026, organized by
   Japanese and international students.
+start: 2026-06-05T23:53:00.000-03:00
 image: https://res.cloudinary.com/ds2vdyndv/image/upload/v1779929903/IMG_7376_jsunbx.jpg
 gallery:
   - https://res.cloudinary.com/ds2vdyndv/image/upload/v1780898686/IMG_6176_tt309b.jpg
